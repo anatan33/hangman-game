@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+:root {
+  --color-grey-light: #D9D8DC;
+  --color-grey: #3E3D42;
+  --color-grey-dark: #121214;
+  --font-game: 'Roboto', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+
+  color: var(--color-grey-light);
+  font-size: 16px;
+  font-family: var(--font-game);
+
+}
+
+.game {
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+  background-color: var(--color-grey-dark);
+}
+
+.game > #screen {
+  border-top: 3px solid;
+  border-left: 3px solid;
+  border-color: var(--color-grey-light);
+
+  width: 200px;
+  height: 400px;
+}
+
+.game > .game-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+
+}
+
+.game-action > #guess {
+  outline: none;
+  font-family: var(--font-game);
+  font-weight: 500;
+  text-align: center;
+
+  background-color: var(--color-grey-dark);
+  border: none;
+  border-bottom: 1px solid;
+  border-color:  var(--color-grey-light);
+
+  height: 48px;
+  padding-inline: 5px;
+  margin-inline: 8px;
+}
+
+.game-action > #palpitate {
+  background-color: var(--color-grey);
+  width: 150px;
+  height: 48px;
+
+  outline: none;
+  border: none;
+  border-radius: 3px;
+
+  font-family: var(--font-game);
+  font-weight: 500;
+  font-size: 16px;
+}
