@@ -64,7 +64,7 @@
   margin-inline: 8px;
 }
 
-.game-action > #palpitate {
+.game-action > #btn-game {
   background-color: var(--color-grey);
   width: 150px;
   height: 48px;
