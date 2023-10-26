@@ -86,12 +86,18 @@ const endGame = () => {
   window.location.reload();
 }
 
+const audioEffect = (arquivo) => {
+  const audio = new Audio(arquivo);
+  audio.play();
+}
+
 btn.addEventListener('click', () => {
   if (valid.includes(guess.value)) {
 
     console.log("VOCÊ JÁ USOU!");
     error += 1;
 
+    audioEffect('assets/audio02.mp3');
     handleErrors(error);
 
   }
@@ -116,7 +122,7 @@ btn.addEventListener('click', () => {
 
     console.log("VOCÊ ERROU!");
     error += 1;
-
+    audioEffect('assets/audio02.mp3');
     handleErrors(error);
 
   }
